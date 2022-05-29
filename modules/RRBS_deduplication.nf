@@ -1,8 +1,8 @@
 process RRBS_deduplication {
-  tag { "${row.sample_name}-${row.sample_id}" }
-  publishDir "${params.outdir}/bam", pattern: '*.bam', mode: 'copy', saveAs: { filename -> "${row.sample_id}.sorted.dedup.bam" }
-  publishDir "${params.outdir}/bam", pattern: '*.bai', mode: 'copy', saveAs: { filename -> "${row.sample_id}.sorted.dedup.bai" }
-  publishDir "${params.outdir}/qc/dedup", pattern: '*.log', mode: 'copy', saveAs: { filename -> "${row.sample_id}.sorted.dedup.log" }
+  tag { "${row.sample_name}-${row.sample_id_reformat}" }
+  publishDir "${params.outdir}/bam", pattern: '*.bam', mode: 'copy', saveAs: { filename -> "${row.sample_id_reformat}.sorted.dedup.bam" }
+  publishDir "${params.outdir}/bam", pattern: '*.bai', mode: 'copy', saveAs: { filename -> "${row.sample_id_reformat}.sorted.dedup.bai" }
+  publishDir "${params.outdir}/qc/dedup", pattern: '*.log', mode: 'copy', saveAs: { filename -> "${row.sample_id_reformat}.sorted.dedup.log" }
 
 label 'lg'
 

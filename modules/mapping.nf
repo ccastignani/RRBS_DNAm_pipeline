@@ -1,8 +1,8 @@
 process MAPPING {
-  publishDir "${params.outdir}/qc/mapping", pattern: '*_SE_report.txt', mode: 'copy', saveAs: { filename -> "${row.sample_id}_SE_report.txt" }
+  publishDir "${params.outdir}/qc/mapping", pattern: '*_SE_report.txt', mode: 'copy', saveAs: { filename -> "${row.sample_id_reformat}_SE_report.txt" }
 
   tag { "${row.sample_name}-${row.sample_id}" }
-  label 'md_high_mem'
+  label 'max'
 
   input:
 	tuple val( row ), \

@@ -1,0 +1,372 @@
+N E X T F L O W  ~  version 20.12.0-edge
+Launching `./main.nf` [small_joliot] - revision: 6262fe3841
+
+=================================================
+###### ###### ###### ###### ###### ###### ##   ##
+  ##   ##  ## ##  ## ##     ##     ##  ##  ## ##
+  ##   ####   ###### ##     #####  ####     ###
+  ##   ## ##  ##  ## ##     ##     ## ##   ## ##
+  ##   ##  ## ##  ## ###### ###### ##  ## ##   ##
+=================================================
+<<<<<<<<<<   NUGEN RRBS DNAm Pipeline   >>>>>>>>>
+=================================================
+
+parameter             value
+---------             -------------------
+profile               crick
+run                   small_joliot
+session               b3cc9977-3699-4dd8-bb6b-c4d231f74f04
+commitId              6c3e209a6a4afd76cf420439692c8c96c1431220
+user                  castigc
+date                  2022-05-27 13:07:20.520
+command               nextflow run ./main.nf -profile crick -queue-size 500 -resume
+Input                 /camp/home/castigc/working/ccastignani/projects/RRBS_preprocessing/DNAm_pipeline/inventory/20220523_batch2.csv
+OutDir                /camp/home/castigc/proj-swanton-vanloo/working/tx421/dataset/RRBS_bismark
+WorkDir               /camp/project/proj-vanloo/analyses/ccastignani/DNAm_pipeline_scratch2/
+=============================================
+
+[-        ] process > DNAm_pipeline:FASTQ_preproc... -
+[-        ] process > DNAm_pipeline:BISMARK_align... -
+[-        ] process > DNAm_pipeline:BISMARK_align... -
+
+[-        ] process > DNAm_pipeline:FASTQ_preproc... -
+[-        ] process > DNAm_pipeline:BISMARK_align... -
+[-        ] process > DNAm_pipeline:BISMARK_align... -
+[-        ] process > DNAm_pipeline:METH_extracti... -
+[-        ] process > DNAm_pipeline:ALIGNMENT_rep... -
+[-        ] process > DNAm_pipeline:ALIGNMENT_rep... -
+
+[82/fe1086] process > DNAm_pipeline:FASTQ_preproc... [100%] 2 of 2, cached: 2
+[-        ] process > DNAm_pipeline:BISMARK_align... -
+[-        ] process > DNAm_pipeline:BISMARK_align... -
+[-        ] process > DNAm_pipeline:METH_extracti... -
+[-        ] process > DNAm_pipeline:ALIGNMENT_rep... -
+[-        ] process > DNAm_pipeline:ALIGNMENT_rep... -
+
+[ae/dc1352] process > DNAm_pipeline:FASTQ_preproc... [100%] 6 of 6, cached: 6
+[73/4707ca] process > DNAm_pipeline:BISMARK_align... [100%] 2 of 2, cached: 2
+[-        ] process > DNAm_pipeline:BISMARK_align... -
+[-        ] process > DNAm_pipeline:METH_extracti... -
+[-        ] process > DNAm_pipeline:ALIGNMENT_rep... -
+[-        ] process > DNAm_pipeline:ALIGNMENT_rep... -
+
+[7a/151afe] process > DNAm_pipeline:FASTQ_preproc... [100%] 10 of 10, cached: 10
+[a3/8d66a5] process > DNAm_pipeline:BISMARK_align... [100%] 6 of 6, cached: 6
+[86/0d5f78] process > DNAm_pipeline:BISMARK_align... [100%] 3 of 3, cached: 3
+[-        ] process > DNAm_pipeline:METH_extracti... -
+[a0/da080a] process > DNAm_pipeline:ALIGNMENT_rep... [100%] 1 of 1, cached: 1
+[-        ] process > DNAm_pipeline:ALIGNMENT_rep... -
+
+[f6/0b18fc] process > DNAm_pipeline:FASTQ_preproc... [100%] 16 of 16, cached: 16
+[ac/72482b] process > DNAm_pipeline:BISMARK_align... [100%] 13 of 13, cached: 13
+[56/c88673] process > DNAm_pipeline:BISMARK_align... [100%] 9 of 9, cached: 9
+[d2/e11fb3] process > DNAm_pipeline:METH_extracti... [100%] 3 of 3, cached: 3
+[a0/da080a] process > DNAm_pipeline:ALIGNMENT_rep... [100%] 1 of 1, cached: 1
+[-        ] process > DNAm_pipeline:ALIGNMENT_rep... -
+
+[68/c8f454] process > DNAm_pipeline:FASTQ_preproc... [100%] 24 of 24, cached: 24
+[ba/d9b048] process > DNAm_pipeline:BISMARK_align... [100%] 21 of 21, cached: 21
+[a5/d4ef58] process > DNAm_pipeline:BISMARK_align... [100%] 14 of 14, cached: 14
+[3d/3f0934] process > DNAm_pipeline:METH_extracti... [ 83%] 5 of 6, cached: 5
+[af/fbdc78] process > DNAm_pipeline:ALIGNMENT_rep... [ 33%] 2 of 6, cached: 2
+[-        ] process > DNAm_pipeline:ALIGNMENT_rep... -
+
+[06/b5c79e] process > DNAm_pipeline:FASTQ_preproc... [100%] 33 of 33, cached: 33
+[b1/72ad3f] process > DNAm_pipeline:BISMARK_align... [100%] 28 of 28, cached: 28
+[2c/0a8b62] process > DNAm_pipeline:BISMARK_align... [100%] 20 of 20, cached: 20
+[cc/04affd] process > DNAm_pipeline:METH_extracti... [ 90%] 9 of 10, cached: 9
+[22/8d99a9] process > DNAm_pipeline:ALIGNMENT_rep... [ 36%] 5 of 14, cached: 5
+[-        ] process > DNAm_pipeline:ALIGNMENT_rep... -
+
+executor >  slurm (1)
+[db/d51288] process > DNAm_pipeline:FASTQ_preproc... [100%] 41 of 41, cached: 41
+[ad/3a1071] process > DNAm_pipeline:BISMARK_align... [100%] 38 of 38, cached: 38
+[7b/53e3ab] process > DNAm_pipeline:BISMARK_align... [100%] 25 of 25, cached: 25
+[58/aebc6c] process > DNAm_pipeline:METH_extracti... [ 92%] 11 of 12, cached: 11
+[01/638a2f] process > DNAm_pipeline:ALIGNMENT_rep... [ 35%] 8 of 23, cached: 8
+[-        ] process > DNAm_pipeline:ALIGNMENT_rep... -
+
+executor >  slurm (2)
+[e4/49ad3e] process > DNAm_pipeline:FASTQ_preproc... [100%] 49 of 49, cached: 49
+[47/4c9d20] process > DNAm_pipeline:BISMARK_align... [100%] 47 of 47, cached: 47
+[a6/4125a6] process > DNAm_pipeline:BISMARK_align... [100%] 34 of 34, cached: 34
+[37/e79353] process > DNAm_pipeline:METH_extracti... [ 93%] 13 of 14, cached: 13
+[e6/7ffe39] process > DNAm_pipeline:ALIGNMENT_rep... [ 30%] 9 of 30, cached: 9
+[-        ] process > DNAm_pipeline:ALIGNMENT_rep... -
+
+executor >  slurm (3)
+[f6/06f159] process > DNAm_pipeline:FASTQ_preproc... [100%] 57 of 57, cached: 57
+[8e/0597df] process > DNAm_pipeline:BISMARK_align... [100%] 54 of 54, cached: 54
+[8e/4d1017] process > DNAm_pipeline:BISMARK_align... [100%] 43 of 43, cached: 43
+[2a/e9ce9b] process > DNAm_pipeline:METH_extracti... [ 94%] 17 of 18, cached: 17
+[4a/386ed1] process > DNAm_pipeline:ALIGNMENT_rep... [ 30%] 12 of 40, cached: 12
+[-        ] process > DNAm_pipeline:ALIGNMENT_rep... -
+
+executor >  slurm (4)
+[b4/813342] process > DNAm_pipeline:FASTQ_preproc... [100%] 71 of 71, cached: 71
+[51/d9b5f6] process > DNAm_pipeline:BISMARK_align... [100%] 64 of 64, cached: 64
+[0f/791c3a] process > DNAm_pipeline:BISMARK_align... [100%] 48 of 48, cached: 48
+[82/69d974] process > DNAm_pipeline:METH_extracti... [ 95%] 21 of 22, cached: 21
+[ec/f1c674] process > DNAm_pipeline:ALIGNMENT_rep... [ 30%] 14 of 47, cached: 14
+[-        ] process > DNAm_pipeline:ALIGNMENT_rep... -
+
+executor >  slurm (5)
+[6e/73229d] process > DNAm_pipeline:FASTQ_preproc... [100%] 76 of 76, cached:...
+[d4/f5e36d] process > DNAm_pipeline:BISMARK_align... [100%] 71 of 71, cached: 71
+[5a/e605da] process > DNAm_pipeline:BISMARK_align... [100%] 51 of 51, cached: 51
+[a7/80ae94] process > DNAm_pipeline:METH_extracti... [ 96%] 24 of 25, cached: 24
+[06/bd164c] process > DNAm_pipeline:ALIGNMENT_rep... [ 28%] 14 of 50, cached: 14
+[-        ] process > DNAm_pipeline:ALIGNMENT_rep... -
+
+executor >  slurm (5)
+[6e/73229d] process > DNAm_pipeline:FASTQ_preproc... [100%] 76 of 76, cached:...
+[28/bb83cd] process > DNAm_pipeline:BISMARK_align... [100%] 76 of 76, cached:...
+[d6/6c9cb4] process > DNAm_pipeline:BISMARK_align... [100%] 63 of 63, cached: 63
+[ca/622d38] process > DNAm_pipeline:METH_extracti... [ 97%] 29 of 30, cached: 29
+[a1/338e55] process > DNAm_pipeline:ALIGNMENT_rep... [ 26%] 15 of 58, cached: 15
+[-        ] process > DNAm_pipeline:ALIGNMENT_rep... -
+
+executor >  slurm (7)
+[6e/73229d] process > DNAm_pipeline:FASTQ_preproc... [100%] 76 of 76, cached:...
+[28/bb83cd] process > DNAm_pipeline:BISMARK_align... [100%] 76 of 76, cached:...
+[37/f23211] process > DNAm_pipeline:BISMARK_align... [100%] 74 of 74, cached: 74
+[a6/31dca5] process > DNAm_pipeline:METH_extracti... [ 97%] 34 of 35, cached: 34
+[00/a44ef7] process > DNAm_pipeline:ALIGNMENT_rep... [ 22%] 16 of 72, cached: 16
+[-        ] process > DNAm_pipeline:ALIGNMENT_rep... -
+
+executor >  slurm (9)
+[6e/73229d] process > DNAm_pipeline:FASTQ_preproc... [100%] 76 of 76, cached:...
+[28/bb83cd] process > DNAm_pipeline:BISMARK_align... [100%] 76 of 76, cached:...
+[ff/354165] process > DNAm_pipeline:BISMARK_align... [100%] 76 of 76, cached:...
+[99/21d230] process > DNAm_pipeline:METH_extracti... [ 98%] 43 of 44, cached: 43
+[19/de25f3] process > DNAm_pipeline:ALIGNMENT_rep... [ 21%] 16 of 76, cached: 16
+[-        ] process > DNAm_pipeline:ALIGNMENT_rep... -
+
+executor >  slurm (11)
+[6e/73229d] process > DNAm_pipeline:FASTQ_preproc... [100%] 76 of 76, cached:...
+[28/bb83cd] process > DNAm_pipeline:BISMARK_align... [100%] 76 of 76, cached:...
+[ff/354165] process > DNAm_pipeline:BISMARK_align... [100%] 76 of 76, cached:...
+[26/2f5d1f] process > DNAm_pipeline:METH_extracti... [ 98%] 55 of 56, cached: 55
+[de/3b0b7a] process > DNAm_pipeline:ALIGNMENT_rep... [ 21%] 16 of 76, cached: 16
+[-        ] process > DNAm_pipeline:ALIGNMENT_rep... -
+
+executor >  slurm (13)
+[6e/73229d] process > DNAm_pipeline:FASTQ_preproc... [100%] 76 of 76, cached:...
+[28/bb83cd] process > DNAm_pipeline:BISMARK_align... [100%] 76 of 76, cached:...
+[ff/354165] process > DNAm_pipeline:BISMARK_align... [100%] 76 of 76, cached:...
+[4d/4e2ba2] process > DNAm_pipeline:METH_extracti... [ 97%] 65 of 67, cached: 65
+[2d/190478] process > DNAm_pipeline:ALIGNMENT_rep... [ 21%] 16 of 76, cached: 16
+[-        ] process > DNAm_pipeline:ALIGNMENT_rep... -
+
+executor >  slurm (14)
+[6e/73229d] process > DNAm_pipeline:FASTQ_preproc... [100%] 76 of 76, cached:...
+[28/bb83cd] process > DNAm_pipeline:BISMARK_align... [100%] 76 of 76, cached:...
+[ff/354165] process > DNAm_pipeline:BISMARK_align... [100%] 76 of 76, cached:...
+[65/e7f41a] process > DNAm_pipeline:METH_extracti... [ 97%] 74 of 76, cached: 74
+[b1/bf62ac] process > DNAm_pipeline:ALIGNMENT_rep... [ 21%] 16 of 76, cached: 16
+[-        ] process > DNAm_pipeline:ALIGNMENT_rep... -
+
+executor >  slurm (17)
+[6e/73229d] process > DNAm_pipeline:FASTQ_preproc... [100%] 76 of 76, cached:...
+[28/bb83cd] process > DNAm_pipeline:BISMARK_align... [100%] 76 of 76, cached:...
+[ff/354165] process > DNAm_pipeline:BISMARK_align... [100%] 76 of 76, cached:...
+[65/e7f41a] process > DNAm_pipeline:METH_extracti... [ 97%] 74 of 76, cached: 74
+[4e/93eed6] process > DNAm_pipeline:ALIGNMENT_rep... [ 21%] 16 of 76, cached: 16
+[-        ] process > DNAm_pipeline:ALIGNMENT_rep... -
+
+executor >  slurm (19)
+[6e/73229d] process > DNAm_pipeline:FASTQ_preproc... [100%] 76 of 76, cached:...
+[28/bb83cd] process > DNAm_pipeline:BISMARK_align... [100%] 76 of 76, cached:...
+[ff/354165] process > DNAm_pipeline:BISMARK_align... [100%] 76 of 76, cached:...
+[65/e7f41a] process > DNAm_pipeline:METH_extracti... [ 97%] 74 of 76, cached: 74
+[99/68d06e] process > DNAm_pipeline:ALIGNMENT_rep... [ 21%] 16 of 76, cached: 16
+[-        ] process > DNAm_pipeline:ALIGNMENT_rep... -
+
+executor >  slurm (22)
+[6e/73229d] process > DNAm_pipeline:FASTQ_preproc... [100%] 76 of 76, cached:...
+[28/bb83cd] process > DNAm_pipeline:BISMARK_align... [100%] 76 of 76, cached:...
+[ff/354165] process > DNAm_pipeline:BISMARK_align... [100%] 76 of 76, cached:...
+[65/e7f41a] process > DNAm_pipeline:METH_extracti... [ 97%] 74 of 76, cached: 74
+[8e/ffb10a] process > DNAm_pipeline:ALIGNMENT_rep... [ 21%] 16 of 76, cached: 16
+[-        ] process > DNAm_pipeline:ALIGNMENT_rep... -
+
+executor >  slurm (24)
+[6e/73229d] process > DNAm_pipeline:FASTQ_preproc... [100%] 76 of 76, cached:...
+[28/bb83cd] process > DNAm_pipeline:BISMARK_align... [100%] 76 of 76, cached:...
+[ff/354165] process > DNAm_pipeline:BISMARK_align... [100%] 76 of 76, cached:...
+[65/e7f41a] process > DNAm_pipeline:METH_extracti... [ 97%] 74 of 76, cached: 74
+[c4/764760] process > DNAm_pipeline:ALIGNMENT_rep... [ 21%] 16 of 76, cached: 16
+[-        ] process > DNAm_pipeline:ALIGNMENT_rep... -
+/camp/home/castigc/proj-swanton-vanloo/working/tx421/dataset/RRBS_bismark/sample_merged_batch2.txt
+
+executor >  slurm (28)
+[6e/73229d] process > DNAm_pipeline:FASTQ_preproc... [100%] 76 of 76, cached:...
+[28/bb83cd] process > DNAm_pipeline:BISMARK_align... [100%] 76 of 76, cached:...
+[ff/354165] process > DNAm_pipeline:BISMARK_align... [100%] 76 of 76, cached:...
+[65/e7f41a] process > DNAm_pipeline:METH_extracti... [ 97%] 74 of 76, cached: 74
+[40/08b915] process > DNAm_pipeline:ALIGNMENT_rep... [ 21%] 16 of 76, cached: 16
+[-        ] process > DNAm_pipeline:ALIGNMENT_rep... -
+/camp/home/castigc/proj-swanton-vanloo/working/tx421/dataset/RRBS_bismark/sample_merged_batch2.txt
+
+executor >  slurm (33)
+[6e/73229d] process > DNAm_pipeline:FASTQ_preproc... [100%] 76 of 76, cached:...
+[28/bb83cd] process > DNAm_pipeline:BISMARK_align... [100%] 76 of 76, cached:...
+[ff/354165] process > DNAm_pipeline:BISMARK_align... [100%] 76 of 76, cached:...
+[65/e7f41a] process > DNAm_pipeline:METH_extracti... [ 97%] 74 of 76, cached: 74
+[82/c14913] process > DNAm_pipeline:ALIGNMENT_rep... [ 21%] 16 of 76, cached: 16
+[-        ] process > DNAm_pipeline:ALIGNMENT_rep... -
+/camp/home/castigc/proj-swanton-vanloo/working/tx421/dataset/RRBS_bismark/sample_merged_batch2.txt
+
+executor >  slurm (36)
+[6e/73229d] process > DNAm_pipeline:FASTQ_preproc... [100%] 76 of 76, cached:...
+[28/bb83cd] process > DNAm_pipeline:BISMARK_align... [100%] 76 of 76, cached:...
+[ff/354165] process > DNAm_pipeline:BISMARK_align... [100%] 76 of 76, cached:...
+[65/e7f41a] process > DNAm_pipeline:METH_extracti... [ 97%] 74 of 76, cached: 74
+[e8/256051] process > DNAm_pipeline:ALIGNMENT_rep... [ 21%] 16 of 76, cached: 16
+[-        ] process > DNAm_pipeline:ALIGNMENT_rep... -
+/camp/home/castigc/proj-swanton-vanloo/working/tx421/dataset/RRBS_bismark/sample_merged_batch2.txt
+
+executor >  slurm (39)
+[6e/73229d] process > DNAm_pipeline:FASTQ_preproc... [100%] 76 of 76, cached:...
+[28/bb83cd] process > DNAm_pipeline:BISMARK_align... [100%] 76 of 76, cached:...
+[ff/354165] process > DNAm_pipeline:BISMARK_align... [100%] 76 of 76, cached:...
+[65/e7f41a] process > DNAm_pipeline:METH_extracti... [ 97%] 74 of 76, cached: 74
+[8b/e15130] process > DNAm_pipeline:ALIGNMENT_rep... [ 21%] 16 of 76, cached: 16
+[-        ] process > DNAm_pipeline:ALIGNMENT_rep... -
+/camp/home/castigc/proj-swanton-vanloo/working/tx421/dataset/RRBS_bismark/sample_merged_batch2.txt
+
+executor >  slurm (42)
+[6e/73229d] process > DNAm_pipeline:FASTQ_preproc... [100%] 76 of 76, cached:...
+[28/bb83cd] process > DNAm_pipeline:BISMARK_align... [100%] 76 of 76, cached:...
+[ff/354165] process > DNAm_pipeline:BISMARK_align... [100%] 76 of 76, cached:...
+[65/e7f41a] process > DNAm_pipeline:METH_extracti... [ 97%] 74 of 76, cached: 74
+[af/f33207] process > DNAm_pipeline:ALIGNMENT_rep... [ 21%] 16 of 76, cached: 16
+[-        ] process > DNAm_pipeline:ALIGNMENT_rep... -
+/camp/home/castigc/proj-swanton-vanloo/working/tx421/dataset/RRBS_bismark/sample_merged_batch2.txt
+
+executor >  slurm (45)
+[6e/73229d] process > DNAm_pipeline:FASTQ_preproc... [100%] 76 of 76, cached:...
+[28/bb83cd] process > DNAm_pipeline:BISMARK_align... [100%] 76 of 76, cached:...
+[ff/354165] process > DNAm_pipeline:BISMARK_align... [100%] 76 of 76, cached:...
+[65/e7f41a] process > DNAm_pipeline:METH_extracti... [ 97%] 74 of 76, cached: 74
+[f8/9c1c36] process > DNAm_pipeline:ALIGNMENT_rep... [ 21%] 16 of 76, cached: 16
+[-        ] process > DNAm_pipeline:ALIGNMENT_rep... -
+/camp/home/castigc/proj-swanton-vanloo/working/tx421/dataset/RRBS_bismark/sample_merged_batch2.txt
+
+executor >  slurm (49)
+[6e/73229d] process > DNAm_pipeline:FASTQ_preproc... [100%] 76 of 76, cached:...
+[28/bb83cd] process > DNAm_pipeline:BISMARK_align... [100%] 76 of 76, cached:...
+[ff/354165] process > DNAm_pipeline:BISMARK_align... [100%] 76 of 76, cached:...
+[65/e7f41a] process > DNAm_pipeline:METH_extracti... [ 97%] 74 of 76, cached: 74
+[64/01d970] process > DNAm_pipeline:ALIGNMENT_rep... [ 21%] 16 of 76, cached: 16
+[-        ] process > DNAm_pipeline:ALIGNMENT_rep... -
+/camp/home/castigc/proj-swanton-vanloo/working/tx421/dataset/RRBS_bismark/sample_merged_batch2.txt
+
+executor >  slurm (53)
+[6e/73229d] process > DNAm_pipeline:FASTQ_preproc... [100%] 76 of 76, cached:...
+[28/bb83cd] process > DNAm_pipeline:BISMARK_align... [100%] 76 of 76, cached:...
+[ff/354165] process > DNAm_pipeline:BISMARK_align... [100%] 76 of 76, cached:...
+[65/e7f41a] process > DNAm_pipeline:METH_extracti... [ 97%] 74 of 76, cached: 74
+[fc/8f42d6] process > DNAm_pipeline:ALIGNMENT_rep... [ 21%] 16 of 76, cached: 16
+[-        ] process > DNAm_pipeline:ALIGNMENT_rep... -
+/camp/home/castigc/proj-swanton-vanloo/working/tx421/dataset/RRBS_bismark/sample_merged_batch2.txt
+
+executor >  slurm (57)
+[6e/73229d] process > DNAm_pipeline:FASTQ_preproc... [100%] 76 of 76, cached:...
+[28/bb83cd] process > DNAm_pipeline:BISMARK_align... [100%] 76 of 76, cached:...
+[ff/354165] process > DNAm_pipeline:BISMARK_align... [100%] 76 of 76, cached:...
+[65/e7f41a] process > DNAm_pipeline:METH_extracti... [ 97%] 74 of 76, cached: 74
+[42/fa1747] process > DNAm_pipeline:ALIGNMENT_rep... [ 21%] 16 of 76, cached: 16
+[-        ] process > DNAm_pipeline:ALIGNMENT_rep... -
+/camp/home/castigc/proj-swanton-vanloo/working/tx421/dataset/RRBS_bismark/sample_merged_batch2.txt
+
+executor >  slurm (60)
+[6e/73229d] process > DNAm_pipeline:FASTQ_preproc... [100%] 76 of 76, cached:...
+[28/bb83cd] process > DNAm_pipeline:BISMARK_align... [100%] 76 of 76, cached:...
+[ff/354165] process > DNAm_pipeline:BISMARK_align... [100%] 76 of 76, cached:...
+[65/e7f41a] process > DNAm_pipeline:METH_extracti... [ 97%] 74 of 76, cached: 74
+[bc/f8302d] process > DNAm_pipeline:ALIGNMENT_rep... [ 21%] 16 of 76, cached: 16
+[-        ] process > DNAm_pipeline:ALIGNMENT_rep... -
+/camp/home/castigc/proj-swanton-vanloo/working/tx421/dataset/RRBS_bismark/sample_merged_batch2.txt
+
+executor >  slurm (62)
+[6e/73229d] process > DNAm_pipeline:FASTQ_preproc... [100%] 76 of 76, cached:...
+[28/bb83cd] process > DNAm_pipeline:BISMARK_align... [100%] 76 of 76, cached:...
+[ff/354165] process > DNAm_pipeline:BISMARK_align... [100%] 76 of 76, cached:...
+[01/bdaa92] process > DNAm_pipeline:METH_extracti... [ 97%] 74 of 76, cached: 74
+[23/60b83f] process > DNAm_pipeline:ALIGNMENT_rep... [ 21%] 16 of 76, cached: 16
+[-        ] process > DNAm_pipeline:ALIGNMENT_rep... -
+/camp/home/castigc/proj-swanton-vanloo/working/tx421/dataset/RRBS_bismark/sample_merged_batch2.txt
+
+executor >  slurm (62)
+[6e/73229d] process > DNAm_pipeline:FASTQ_preproc... [100%] 76 of 76, cached:...
+[28/bb83cd] process > DNAm_pipeline:BISMARK_align... [100%] 76 of 76, cached:...
+[ff/354165] process > DNAm_pipeline:BISMARK_align... [100%] 76 of 76, cached:...
+[01/bdaa92] process > DNAm_pipeline:METH_extracti... [ 97%] 74 of 76, cached: 74
+[40/c211f0] process > DNAm_pipeline:ALIGNMENT_rep... [ 25%] 19 of 76, cached: 16
+[-        ] process > DNAm_pipeline:ALIGNMENT_rep... -
+/camp/home/castigc/proj-swanton-vanloo/working/tx421/dataset/RRBS_bismark/sample_merged_batch2.txt
+
+executor >  slurm (62)
+[6e/73229d] process > DNAm_pipeline:FASTQ_preproc... [100%] 76 of 76, cached:...
+[28/bb83cd] process > DNAm_pipeline:BISMARK_align... [100%] 76 of 76, cached:...
+[ff/354165] process > DNAm_pipeline:BISMARK_align... [100%] 76 of 76, cached:...
+[01/bdaa92] process > DNAm_pipeline:METH_extracti... [ 97%] 74 of 76, cached: 74
+[32/5da2b8] process > DNAm_pipeline:ALIGNMENT_rep... [ 46%] 35 of 76, cached: 16
+[-        ] process > DNAm_pipeline:ALIGNMENT_rep... -
+/camp/home/castigc/proj-swanton-vanloo/working/tx421/dataset/RRBS_bismark/sample_merged_batch2.txt
+
+executor >  slurm (62)
+[6e/73229d] process > DNAm_pipeline:FASTQ_preproc... [100%] 76 of 76, cached:...
+[28/bb83cd] process > DNAm_pipeline:BISMARK_align... [100%] 76 of 76, cached:...
+[ff/354165] process > DNAm_pipeline:BISMARK_align... [100%] 76 of 76, cached:...
+[01/bdaa92] process > DNAm_pipeline:METH_extracti... [ 97%] 74 of 76, cached: 74
+[c8/773024] process > DNAm_pipeline:ALIGNMENT_rep... [ 66%] 50 of 76, cached: 16
+[-        ] process > DNAm_pipeline:ALIGNMENT_rep... -
+/camp/home/castigc/proj-swanton-vanloo/working/tx421/dataset/RRBS_bismark/sample_merged_batch2.txt
+
+executor >  slurm (62)
+[6e/73229d] process > DNAm_pipeline:FASTQ_preproc... [100%] 76 of 76, cached:...
+[28/bb83cd] process > DNAm_pipeline:BISMARK_align... [100%] 76 of 76, cached:...
+[ff/354165] process > DNAm_pipeline:BISMARK_align... [100%] 76 of 76, cached:...
+[01/bdaa92] process > DNAm_pipeline:METH_extracti... [ 97%] 74 of 76, cached: 74
+[4c/5f065b] process > DNAm_pipeline:ALIGNMENT_rep... [ 86%] 65 of 76, cached: 16
+[-        ] process > DNAm_pipeline:ALIGNMENT_rep... -
+/camp/home/castigc/proj-swanton-vanloo/working/tx421/dataset/RRBS_bismark/sample_merged_batch2.txt
+
+executor >  slurm (62)
+[6e/73229d] process > DNAm_pipeline:FASTQ_preproc... [100%] 76 of 76, cached:...
+[28/bb83cd] process > DNAm_pipeline:BISMARK_align... [100%] 76 of 76, cached:...
+[ff/354165] process > DNAm_pipeline:BISMARK_align... [100%] 76 of 76, cached:...
+[01/bdaa92] process > DNAm_pipeline:METH_extracti... [ 97%] 74 of 76, cached: 74
+[23/60b83f] process > DNAm_pipeline:ALIGNMENT_rep... [100%] 76 of 76, cached:...
+[-        ] process > DNAm_pipeline:ALIGNMENT_rep... [  0%] 0 of 1
+/camp/home/castigc/proj-swanton-vanloo/working/tx421/dataset/RRBS_bismark/sample_merged_batch2.txt
+
+executor >  slurm (63)
+[6e/73229d] process > DNAm_pipeline:FASTQ_preproc... [100%] 76 of 76, cached:...
+[28/bb83cd] process > DNAm_pipeline:BISMARK_align... [100%] 76 of 76, cached:...
+[ff/354165] process > DNAm_pipeline:BISMARK_align... [100%] 76 of 76, cached:...
+[01/bdaa92] process > DNAm_pipeline:METH_extracti... [ 97%] 74 of 76, cached: 74
+[23/60b83f] process > DNAm_pipeline:ALIGNMENT_rep... [100%] 76 of 76, cached:...
+[55/150e11] process > DNAm_pipeline:ALIGNMENT_rep... [  0%] 0 of 1
+/camp/home/castigc/proj-swanton-vanloo/working/tx421/dataset/RRBS_bismark/sample_merged_batch2.txt
+
+executor >  slurm (63)
+[6e/73229d] process > DNAm_pipeline:FASTQ_preproc... [100%] 76 of 76, cached:...
+[28/bb83cd] process > DNAm_pipeline:BISMARK_align... [100%] 76 of 76, cached:...
+[ff/354165] process > DNAm_pipeline:BISMARK_align... [100%] 76 of 76, cached:...
+[01/bdaa92] process > DNAm_pipeline:METH_extracti... [ 97%] 74 of 76, cached: 74
+[23/60b83f] process > DNAm_pipeline:ALIGNMENT_rep... [100%] 76 of 76, cached:...
+[55/150e11] process > DNAm_pipeline:ALIGNMENT_rep... [100%] 1 of 1 ✔
+
+
+executor >  slurm (63)
+[6e/73229d] process > DNAm_pipeline:FASTQ_preproc... [100%] 76 of 76, cached:...
+[28/bb83cd] process > DNAm_pipeline:BISMARK_align... [100%] 76 of 76, cached:...
+[ff/354165] process > DNAm_pipeline:BISMARK_align... [100%] 76 of 76, cached:...
+[01/bdaa92] process > DNAm_pipeline:METH_extracti... [ 99%] 75 of 76, cached: 74
+[23/60b83f] process > DNAm_pipeline:ALIGNMENT_rep... [100%] 76 of 76, cached:...
+[55/150e11] process > DNAm_pipeline:ALIGNMENT_rep... [100%] 1 of 1 ✔
+
+slurmstepd: error: *** JOB 38524687 ON ca056 CANCELLED AT 2022-05-27T15:44:30 ***

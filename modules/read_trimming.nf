@@ -1,7 +1,7 @@
 process TRIM_READS {
 
- tag { "${row.sample_name}-${row.sample_id}" }
-  publishDir "${params.outdir}/qc/trimming", pattern: "*_report.txt", mode: 'copy', saveAs: { filename -> "${row.sample_id}_trimming_report.txt" }
+ tag { "${row.sample_name}-${row.sample_id_reformat}" }
+  publishDir "${params.outdir}/qc/trimming", pattern: "*_report.txt", mode: 'copy', saveAs: { filename -> "${row.sample_id_reformat}_trimming_report.txt" }
 
 
   label 'lg'

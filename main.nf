@@ -1,8 +1,8 @@
 #!/usr/bin/env nextflow
 nextflow.enable.dsl=2
 /////////////////////////////////////////////////////////////////////////////
-/* --                  TRACERx Single-cell DLP Pipeline                 -- */
-/* --                       Authors: Mark S. Hill;                      -- */
+/* --                      NUGEN RRBS DNAm Pipeline                     -- */
+/* --                     Authors: Carla Castignani;                    -- */
 /////////////////////////////////////////////////////////////////////////////
 include { logo; helpMessage; outputSummary } from './lib/core_functions'
 outputSummary()

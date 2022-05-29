@@ -22,7 +22,8 @@ process MERGE_SUMMARY {
   printf "total_C\tC_in_CpG_context\tC_in_CHG_context\tC_in_CHH_context\t" >> summary_report.tsv
   printf "unaligned_reads\talignments_processed\tduplicates\tdup_rate\tduplicates_no_barcode\tdup_rate_no_barcode\n" >> summary_report.tsv
 
-  cat *LTX*_report.tsv >> summary_report.tsv
+  find . -name '*report.tsv' ! -name 'summary_report.tsv' -exec cat {} \\; >> summary_report.tsv
+  
   """
 
 }

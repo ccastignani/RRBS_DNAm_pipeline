@@ -10,9 +10,6 @@ include { FASTQ_preprocess } from '../subworkflows/FASTQ_preprocess.nf'
 include { BISMARK_alignment } from '../subworkflows/BISMARK_alignment.nf'
 include { METH_extraction } from '../subworkflows/METH_extraction.nf'
 include { ALIGNMENT_report } from '../subworkflows/ALIGNMENT_report.nf'
-
-include { CAMDAC_run } from '../subworkflows/CAMDAC_run.nf' 
-
 ///////////////////////////////////////////////
 /* --        PARSE INVENTORY        -- */
 //////////////////////////////////////////////
@@ -31,7 +28,8 @@ KEYS = [ "sampleId", \
           "TRACERxID", \
           "PEACE", \
           "tx421" , \
-          'region_complete' ]
+          'region_complete' ,\
+          'sample_id_reformat' ]
 inventory = Channel.fromPath( input_file, checkIfExists: true )
                    .ifEmpty { exit 1, "Input file not found" }
                    .splitCsv( header:true, sep: "," )
@@ -67,18 +65,16 @@ workflow DNAm_pipeline {
   def PEACE = row.PEACE
   def tx421 = row.tx421
   def region_complete = row.region_complete
+  def sample_id_reformat = row.sample_id_reformat
   def bam_path = dedup_bam_path
 
-  [sampleId, sample_id, patient_id, region_id,sex,mni,mno, tracerx_id, TRACERxID, PEACE, tx421, region_complete, bam_path]
+  [sampleId, sample_id, patient_id, region_id,sex,mni,mno, tracerx_id, TRACERxID, PEACE, tx421, region_complete, sample_id_reformat, bam_path]
   }.set{ new_channel }
 
 
-  new_channel.collectFile( name:'sample.txt', storeDir:"${params.outdir}", {sampleId, sample_id, patient_id,region_id,sex,mni,mno,tracerx_id,TRACERxID,PEACE,tx421,region_complete, bam_path -> "$sampleId,$sample_id,$patient_id,$region_id,$sex,$mni,$mno,$tracerx_id,$TRACERxID,$PEACE,$tx421,$region_complete,$bam_path\n" })
+  new_channel.collectFile( name:'sample_merged_batch2.txt', storeDir:"${params.outdir}", {sampleId, sample_id, patient_id,region_id,sex,mni,mno,tracerx_id,TRACERxID,PEACE,tx421,region_complete, sample_id_reformat, bam_path -> "$sampleId,$sample_id,$patient_id,$region_id,$sex,$mni,$mno,$tracerx_id,$TRACERxID,$PEACE,$tx421,$region_complete,$sample_id_reformat,$bam_path\n" })
   .set{ csv_file_ch }
   csv_file_ch.view()
 
-
-  // summary- collect all output first, then run subworkflow
-  // BISMARK_alignment.out.dedup_bam | CAMDAC_run
 
 }
