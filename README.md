@@ -14,19 +14,15 @@ This pipeline performs the alignment and methylation extraction for RRBS Nugen s
 
 ### Input
 
-The initial input of this pipeline is a CSV file containing the inventory of samples to run (each row corresponding to an independent sample). 
-DNAm (WORKFLOW)
-- FASTQ_preprocess (Subworkflow)
-    - Trimgalore (Modules)
+The initial input of this pipeline is a CSV file containing the inventory of samples to run (each row corresponding to an independent sample). See ``inventory/inventory.csv`` for an example. 
 
-- BISMARK_alignment 
-    - Bismark alignment + Sort sam
+### DNAm (WORKFLOW)
 
-- NUGEN_deduplication
-    - RRBS deduplication(python)
-    - Cleanup
-
-- SUMMARY
+This workflow has the following subworkflows:
+- FASTQ_preprocess (Subworkflow): Performs Trimming using trimgalore
+- BISMARK_alignment (Subworkflow): Performs Bismark alignment and sorts 
+- NUGEN_deduplication (Subworkflow): Performs Deduplication step using Nugen Custom py script (See manual: https://www.nugen.com/sites/default/files/M01394_v6_User_Guide%3A_Ovation_RRBS_Methyl-Seq_System_5912.pdf) and cleanup 
+- SUMMARY: Aggregates QC reports of all previous processes into a single summary report
 
 ### Output
 
