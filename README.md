@@ -38,23 +38,21 @@ DNAm (WORKFLOW)
 - ``/workflows``: Contains the DNAm_nf pipeline
 
 ## Usage:
-1. Clone the repo
+**1. Clone the repo**
 
 ``git clone https://github.com/ccastignani/RRBS_DNAm_pipeline``
 
-2. Installation and edig config file
+**2. Installation and edit config file**
 
 Before you start running the pipeline, you should make sure all required software is installed and the config file is set up accordingly (``conf/crick.conf``). You should make sure the ``params`` section contains the paths to the input and output directories as well as the executables (Trimgalore, Bismark, Bowtie and Samtools).
 
-3. Execution wrappers and launch Pipeline
+**3. Execution wrappers and launch Pipeline**
 
 The pipeline can be called from a bash wrapper script as follows which can be launched via `` sbatch submit.sh ``:
 ``#!/usr/bin/env bash
 ml Nextflow
 ml Singularity
 NXF_VER=20.12.0-edge nextflow run ./main.nf -profile crick -queue-size 500 -resume``
-
-   
 
 
 ## Acknowledgments:
