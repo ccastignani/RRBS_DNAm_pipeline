@@ -12,7 +12,7 @@
 ## Description:
 This pipeline performs the alignment and methylation extraction for RRBS Nugen sequencing. 
 
-
+### Input
 DNAm (WORKFLOW)
 - FASTQ_preprocess (Subworkflow)
     - Trimgalore (Modules)
@@ -26,16 +26,16 @@ DNAm (WORKFLOW)
 
 - SUMMARY
 
+### Output
 
 ## Repository structure:
 
-/bin
-/conf
-/inventory
-/modules
-/subworkflows
-/workflows
-
+- ``/bin``: Contains executables and "primary" scripts. Primary scripts are generally R scripts which are run almost exclusively within a single process.
+- ``/conf``: Nextflow configuration files. These are used to specify settings for local, debug, and CAMP environments.
+- ``/inventory``: contains an example of the inventory used as input for the pipeline
+- ``/modules``: Nextflow modules. These follow the naming convention <name>.module.nf, and may be nested within a directory with additional required scripts and files.
+- ``/subworkflows``: Nextflow modules. These follow the naming convention <name>.module.nf, and may be nested within a directory with additional required scripts and files.
+- ``/workflows``: Contains the DNAm_nf pipeline
 
 ## Usage:
 1. Clone the repo
