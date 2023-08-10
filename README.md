@@ -37,6 +37,10 @@ DNAm (WORKFLOW)
 - ``/subworkflows``: Nextflow modules. These follow the naming convention <name>.module.nf, and may be nested within a directory with additional required scripts and files.
 - ``/workflows``: Contains the DNAm_nf pipeline
 
+## Before running the pipeline
+
+Before you start running the pipeline, you should make sure all required software are downloaded and the config file is set up accordingly ([link])https://github.com/ccastignani/RRBS_DNAm_pipeline/blob/main/conf/crick.conf). 
+
 ## Usage:
 1. Clone the repo
 
