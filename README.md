@@ -49,10 +49,11 @@ Before you start running the pipeline, you should make sure all required softwar
 **3. Execution wrappers and launch Pipeline**
 
 The pipeline can be called from a bash wrapper script as follows which can be launched via `` sbatch submit.sh ``:
-``#!/usr/bin/env bash
+
+'' #!/usr/bin/env bash
 ml Nextflow
 ml Singularity
-NXF_VER=20.12.0-edge nextflow run ./main.nf -profile crick -queue-size 500 -resume``
+NXF_VER=20.12.0-edge nextflow run ./main.nf -profile crick -queue-size 500 -resume''
 
 
 ## Acknowledgments:
