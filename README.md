@@ -1,8 +1,8 @@
 #  TRACERx NUGEN RRBS DNAm Pipeline
 
-#h2 Table of Contents:
+##Table of Contents:
 
-#h2 Pipeline Overview:
+##Pipeline Overview:
  ##ADD photo
 
 DNAm (WORKFLOW)
@@ -18,7 +18,7 @@ DNAm (WORKFLOW)
 
 - SUMMARY
 
-#h2 Description:
+##Description:
 
 Input:
 
@@ -26,9 +26,9 @@ Output:
 
 
 
-#h2 Repository structure:
+##Repository structure:
 
-#h2 Usage:
+##Usage:
 1. Clone the repo
 
 2. Execution wrappers
@@ -37,6 +37,6 @@ Output:
 
 4. Launch Pipeline 
 
-#h2 Acknowledgments:
+##Acknowledgments:
 Special thanks to Mark S. Hill for troubleshooting and nf guidelines and Elizabeth Larose Cadieux for the Nugen RRBS pipeline conceptualization
 
