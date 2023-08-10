@@ -13,6 +13,8 @@
 This pipeline performs the alignment and methylation extraction for RRBS Nugen sequencing. 
 
 ### Input
+
+The initial input of this pipeline is a CSV file containing the inventory of samples to run (each row corresponding to an independent sample). 
 DNAm (WORKFLOW)
 - FASTQ_preprocess (Subworkflow)
     - Trimgalore (Modules)
@@ -28,6 +30,18 @@ DNAm (WORKFLOW)
 
 ### Output
 
+The pipeline will output a nested directory in the defined output directory with the following structure:
+- ``/bam``: Contains bams and bam.ai files
+- ``/methylation_extraction``: Contains output for Bismark Methylation Extraction (each sample in a subfolder)
+- ``/qc``: Contains reports for each process (deduplication, Bismark alignment, Bismark methylation extraction, and trimming)
+  - ``/dedup``
+  - ``/mapping``
+  - ``/methylation_extraction``
+  - ``/trimming``
+
+Additionally, it will output an updated inventory with a new column corresponding to the absolute path to the bam file (``sample_merged2.txt``) and a summary report (``summary_report.tsv``) containing some metrics used for QC (eg. aligned reads, mapping efficiency, duplication rate, etc). 
+
+- 
 ## Repository structure:
 
 - ``/bin``: Contains executables and "primary" scripts. Eg: removeN6duplicates.py from Nugen
