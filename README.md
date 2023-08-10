@@ -1,10 +1,19 @@
 #  TRACERx NUGEN RRBS DNAm Pipeline
 
 ## Table of Contents:
+- Repository structure
 - Pipeline Overview
 - Description
-- Repository structure
 - Usage
+
+## Repository structure:
+
+- ``/bin``: Contains executables and "primary" scripts. Eg: removeN6duplicates.py from Nugen
+- ``/conf``: Nextflow configuration files. These are used to specify settings for local, debug, and HPC environments.
+- ``/inventory``: contains an example of the inventory used as input for the pipeline
+- ``/modules``: Nextflow modules. These follow the naming convention <name>.module.nf, and may be nested within a directory with additional required scripts and files.
+- ``/subworkflows``: Contains nested subworkflows (eg. FASTQ_preprocess, BISMARK_alignment, NUGEN_deduplication or SUMMARY)
+- ``/workflows``: Contains the DNAm_nf pipeline
   
 ## Pipeline Overview:
 ![nextflow_pipeline](https://github.com/ccastignani/RRBS_DNAm_pipeline/assets/44896853/0285b6e7-bbc6-4856-876d-7b2b3c41a530)
@@ -37,15 +46,7 @@ The pipeline will output a nested directory in the defined output directory with
 
 Additionally, it will output an updated inventory with a new column corresponding to the absolute path to the bam file (``sample_merged2.txt``) and a summary report (``summary_report.tsv``) containing some metrics used for QC (eg. aligned reads, mapping efficiency, duplication rate, etc). 
 
-- 
-## Repository structure:
 
-- ``/bin``: Contains executables and "primary" scripts. Eg: removeN6duplicates.py from Nugen
-- ``/conf``: Nextflow configuration files. These are used to specify settings for local, debug, and HPC environments.
-- ``/inventory``: contains an example of the inventory used as input for the pipeline
-- ``/modules``: Nextflow modules. These follow the naming convention <name>.module.nf, and may be nested within a directory with additional required scripts and files.
-- ``/subworkflows``: Contains nested subworkflows (eg. FASTQ_preprocess, BISMARK_alignment, NUGEN_deduplication or SUMMARY)
-- ``/workflows``: Contains the DNAm_nf pipeline
 
 ## Usage:
 **1. Clone the repo**
