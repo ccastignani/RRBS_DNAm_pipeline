@@ -30,27 +30,32 @@ DNAm (WORKFLOW)
 
 ## Repository structure:
 
-- ``/bin``: Contains executables and "primary" scripts. Primary scripts are generally R scripts which are run almost exclusively within a single process.
-- ``/conf``: Nextflow configuration files. These are used to specify settings for local, debug, and CAMP environments.
+- ``/bin``: Contains executables and "primary" scripts. Eg: removeN6duplicates.py from Nugen
+- ``/conf``: Nextflow configuration files. These are used to specify settings for local, debug, and HPC environments.
 - ``/inventory``: contains an example of the inventory used as input for the pipeline
 - ``/modules``: Nextflow modules. These follow the naming convention <name>.module.nf, and may be nested within a directory with additional required scripts and files.
-- ``/subworkflows``: Nextflow modules. These follow the naming convention <name>.module.nf, and may be nested within a directory with additional required scripts and files.
+- ``/subworkflows``: Contains nested subworkflows (eg. FASTQ_preprocess, BISMARK_alignment, NUGEN_deduplication or SUMMARY)
 - ``/workflows``: Contains the DNAm_nf pipeline
-
-## Before running the pipeline
-
-Before you start running the pipeline, you should make sure all required software are downloaded and the config file is set up accordingly ([link])https://github.com/ccastignani/RRBS_DNAm_pipeline/blob/main/conf/crick.conf). 
 
 ## Usage:
 1. Clone the repo
 
 ``git clone https://github.com/ccastignani/RRBS_DNAm_pipeline``
 
-2. Execution wrappers
+2. Installation and edig config file
 
-3. Edit config file
+Before you start running the pipeline, you should make sure all required software is installed and the config file is set up accordingly (``conf/crick.conf``). You should make sure the ``params`` section contains the paths to the input and output directories as well as the executables (Trimgalore, Bismark, Bowtie and Samtools).
 
-4. Launch Pipeline 
+3. Execution wrappers and launch Pipeline
+
+The pipeline can be called from a bash wrapper script as follows which can be launched via `` sbatch submit.sh ``:
+``#!/usr/bin/env bash
+ml Nextflow
+ml Singularity
+NXF_VER=20.12.0-edge nextflow run ./main.nf -profile crick -queue-size 500 -resume``
+
+   
+
 
 ## Acknowledgments:
 Special thanks to Mark S. Hill for troubleshooting and nf guidelines and Elizabeth Larose Cadieux for the Nugen RRBS pipeline conceptualization
